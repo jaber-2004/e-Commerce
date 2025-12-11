@@ -11,20 +11,20 @@ import { Link } from 'react-router-dom';
 
 const Ads = () => {
   return (
-    <div className="py-[150px]">
+    <div className="py-[120px]">
       <Container>
-        <Flex className={"justify-between items-start"}>
-          <div className="w-[49%]">
+        <Flex className={"gap-x-6.5"}>
+          <div className="">
             <Link>
               <Images srcImg={AdOne} />
             </Link>
           </div>
-          <div className="w-[49%]">
+          <div className="">
             <Link>
               <Images srcImg={Adtwo} />
             </Link>
             <Link>
-              <Images className={"mt-5.5"} srcImg={Adthree} />
+              <Images className={"mt-6.5"} srcImg={Adthree} />
             </Link>
           </div>
         </Flex>

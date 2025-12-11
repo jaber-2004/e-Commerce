@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 const Sharcebar = () => {
   return (
-    <div className="bg-[#F5F5F3] border-y-1 border-y-[#979797] py-8">
+    <div className="bg-[#F5F5F3] border-y-1 border-y-[#979797] py-4">
       <Container>
         <Flex className={"justify-between"}>
           <div className="flex items-center">
