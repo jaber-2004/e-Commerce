@@ -11,7 +11,7 @@ const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
   return (
     <div className="relative group">
       <Images srcImg={productImg} className={"w-full"} />
-      <Badge badgeText={badgeText} className={"absolute top-3 left-3"} />
+      <Badge badgeText={badgeText} className={`absolute top-3 left-3`} />
       <div className="bg-[#FFF] w-full bottom-[43px] left-0 p-4 absolute opacity-0 group-hover:opacity-100 duration-500">
         <Flex className={"justify-end gap-x-3"}>
           <Heading
@@ -34,7 +34,7 @@ const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
           <LuRefreshCcw />
         </Flex>
         <Flex className={"justify-end gap-x-3"}>
-          <Heading 
+          <Heading
             className={
               "text-[#767676] text-base font-dmSans hover:text-primary hover:font-bold duration-300 cursor-pointer"
             }

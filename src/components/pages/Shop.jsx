@@ -1,8 +1,11 @@
 import React from 'react'
+import Shopbycategory from '../layouts/Shopbycategory'
 
 const Shop = () => {
   return (
-    <div className='text-center'>Shop</div>
+    <>
+    <Shopbycategory/>
+    </>
   )
 }
 

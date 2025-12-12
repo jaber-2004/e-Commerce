@@ -10,7 +10,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="my-30">
+    <div className="mt-20 mb-14">
       <Container>
         <Flex className={" items-start"}>
           <div className="w-[15%]">
@@ -20,19 +20,19 @@ const Footer = () => {
               as={"h4"}
             />
             <ul className={"text-sm text-[#6D6D6D] font-dmSans mt-5"}>
-              <li className="py-1.5">
+              <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
                 <Link to={""}>Home</Link>
               </li>
-              <li className="py-1.5">
+              <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
                 <Link to={""}>Shop</Link>
               </li>
-              <li className="py-1.5">
+              <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
                 <Link to={""}>About</Link>
               </li>
-              <li className="py-1.5">
+              <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
                 <Link to={""}>Contact</Link>
               </li>
-              <li className="py-1.5">
+              <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
                 <Link to={""}>Journal</Link>
               </li>
             </ul>
