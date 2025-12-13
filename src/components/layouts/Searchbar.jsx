@@ -1,13 +1,12 @@
-
-import Container from '../Container'
-import Flex from '../Flex'
-import Icons from '../Icons'
-import Heading from '../Heading'
+import Container from "../Container";
+import Flex from "../Flex";
+import Icons from "../Icons";
+import Heading from "../Heading";
 import { FaSearch } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Sharcebar = () => {
   return (
@@ -22,7 +21,7 @@ const Sharcebar = () => {
               as={"h5"}
             />
           </div>
-          <div className="py-2 px-2.5 bg-[#FFF] flex items-center w-[500px] justify-between">
+          <div className="py-2 px-3 bg-[#FFF] rounded-[15px] flex items-center w-[500px] justify-between">
             <input
               className="outline-0"
               type="text"
@@ -45,6 +44,6 @@ const Sharcebar = () => {
       </Container>
     </div>
   );
-}
+};
 
-export default Sharcebar
+export default Sharcebar;

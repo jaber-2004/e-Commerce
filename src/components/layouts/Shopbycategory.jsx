@@ -11,6 +11,7 @@ import Product from "../Product";
 import shopOne from "/src/assets/bestsallerThree.png";
 import shopTwo from "/src/assets/specialofferThree.png";
 import shopThree from "/src/assets/shopcategory.png";
+import Badge from "../Badge";
 
 const Shopbycategory = () => {
   return (
@@ -89,21 +90,23 @@ const Shopbycategory = () => {
             </ul>
           </div>
           <div className="flex ml-4 mt-5 gap-x-5 w-[80%]">
-            <div className="w-1/3">
+            <div className="w-1/3 relative">
               <Product
                 badgeText={"New"}
                 productImg={shopOne}
                 productTitle={"Basic Crew Neck Tee"}
                 productPrice={"$40.00"}
               />
+              <Badge className={"absolute top-3 left-3"} badgeText={"New"} />
             </div>
-            <div className="w-1/3">
+            <div className="w-1/3 relative">
               <Product
                 badgeText={"New"}
                 productImg={shopTwo}
                 productTitle={"Basic Crew Neck Tee"}
                 productPrice={"$40.00"}
               />
+              <Badge className={"absolute top-3 left-3"} badgeText={"New"} />
             </div>
             <div className="w-1/3">
               <Product
