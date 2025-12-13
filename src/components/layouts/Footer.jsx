@@ -90,15 +90,42 @@ const Footer = () => {
         </Flex>
         <Flex className={"justify-between mt-10"}>
           <div className="flex gap-x-4">
-            <Link>
-              <FaFacebookF />
-            </Link>
-            <Link>
-              <FaLinkedinIn />
-            </Link>
-            <Link>
-              <FaInstagram />
-            </Link>
+            <div className="relative group ">
+              <Link>
+                <FaFacebookF />
+              </Link>
+
+              <h4
+                className="absolute left-1/2 -translate-x-1/2 bottom-4
+                   bg-black text-white text-sm px-2 py-1 rounded
+                   opacity-0 group-hover:opacity-100
+                    duration-300 "
+              >
+                Facebook
+              </h4>
+            </div>
+
+            <div className="relative group">
+              <Link>
+                <FaLinkedinIn />
+              </Link>
+              <h4 className="absolute left-1/2 -translate-x-1/2 top-4 bg-black text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 duration-300">
+                Linkdin
+              </h4>
+            </div>
+            <div className="relative group">
+              <Link>
+                <FaInstagram />
+              </Link>
+              <h4
+                className="absolute left-1/2 -translate-x-1/2 bottom-4
+                   bg-black text-white text-sm px-2 py-1 rounded
+                   opacity-0 group-hover:opacity-100
+                    duration-300 "
+              >
+                Instagram
+              </h4>
+            </div>
           </div>
           <div className="">
             <Heading
