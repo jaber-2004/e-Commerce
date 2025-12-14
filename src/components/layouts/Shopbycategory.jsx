@@ -11,6 +11,10 @@ import Product from "../Product";
 import shopOne from "/src/assets/bestsallerThree.png";
 import shopTwo from "/src/assets/specialofferThree.png";
 import shopThree from "/src/assets/shopcategory.png";
+import shopcolorOne from "/src/assets/specialofferOne.png";
+import shopcolorTwo from "/src/assets/shopcolortwo.png";
+import shopcolorThree from "/src/assets/bestsallerFour.png";
+
 import Badge from "../Badge";
 
 const Shopbycategory = () => {
@@ -118,6 +122,56 @@ const Shopbycategory = () => {
             </div>
           </div>
         </Flex>
+        {/* Shop By Color Start  */}
+        <Flex className={"items-start mt-10"}>
+          <div className="w-[20%]">
+            <Heading
+              className={"text-primary text-[20px] font-bold font-dmSans mb-7"}
+              text={"Shop by Color "}
+              as={"h4"}
+            />
+            <ul className=" text-[#767676] text-base font-dmSans">
+              <li className="pb-3.5 flex justify-between items-center">
+                Color 1
+              </li>
+              <li className="pb-3.5"> Color 2</li>
+              <li className="pb-3.5 flex justify-between  items-center">
+                Color 3
+              </li>
+              <li className="pb-3.5">Color 4</li>
+              <li className="pb-3.5">Color 5</li>
+            </ul>
+          </div>
+          <div className="flex ml-4 mt-15 gap-x-5 w-[80%]">
+            <div className="w-1/3 relative">
+              <Product
+                badgeText={"New"}
+                productImg={shopcolorOne}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$40.00"}
+              />
+              {/* <Badge className={"absolute top-3 left-3"} badgeText={"New"} /> */}
+            </div>
+            <div className="w-1/3 relative">
+              <Product
+                badgeText={"New"}
+                productImg={shopcolorTwo}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$40.00"}
+              />
+              <Badge className={"absolute top-3 left-3"} badgeText={"New"} />
+            </div>
+            <div className="w-1/3">
+              <Product
+                badgeText={"New"}
+                productImg={shopcolorThree}
+                productTitle={"Basic Crew Neck Tee"}
+                productPrice={"$40.00"}
+              />
+            </div>
+          </div>
+        </Flex>
+        {/* Shop By Color End */}
       </Container>
     </div>
   );

@@ -13,7 +13,7 @@ const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
     <div className="relative group">
       <Images srcImg={productImg} className={"w-full"} />
       {/* <Badge badgeText={badgeText} className={`absolute top-3 left-3`} /> */}
-      <div className="bg-[#FFF] w-full bottom-[43px] left-0 p-4 absolute opacity-0 group-hover:opacity-100 translate-y-5 group-hover:translate-0 duration-500">
+      <div className="bg-[#FFF] w-full bottom-[66px]  left-0 p-4 absolute opacity-0 group-hover:opacity-100 translate-y-5 group-hover:translate-0 duration-500">
         <Flex className={"justify-end"}>
           <Link className="flex items-center gap-x-3">
             <Heading
@@ -63,6 +63,11 @@ const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
           as={"h4"}
         />
       </Flex>
+      <Heading
+        className={"text-primary text-base font-dmSans"}
+        text={"Black"}
+        as={"h4"}
+      />
     </div>
   );
 };
