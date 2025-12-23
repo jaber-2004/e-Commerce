@@ -23,7 +23,7 @@ const Newarrivals = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1500,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
@@ -35,7 +35,7 @@ const Newarrivals = () => {
           text={"New Arrivals"}
           as={"h3"}
         />
-        <div className="-mx-2.5">
+        <div className="-mx-2.5 mt-5">
           <Slider {...settings}>
             <div className="w-1/4 relative px-2.5">
               <Product

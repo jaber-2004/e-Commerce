@@ -85,7 +85,10 @@ const Footer = () => {
             />
           </div>
           <div className="w-[20%]">
-            <Images srcImg={Logo} />
+            <Link to={"/"}>
+             
+              <Images srcImg={Logo} />
+            </Link>
           </div>
         </Flex>
         <Flex className={"justify-between mt-10"}>

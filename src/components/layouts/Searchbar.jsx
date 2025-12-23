@@ -29,13 +29,15 @@ const Sharcebar = () => {
             />
             <FaSearch />
           </div>
-          <div className="flex gap-x-4">
-            <Link>
-              <FaUser />
-            </Link>
-            <Link>
-              <FaCaretDown />
-            </Link>
+          <div className="flex gap-x-5">
+            <div className="flex gap-x-1">
+              <Link>
+                <FaUser />
+              </Link>
+              <Link>
+                <FaCaretDown />
+              </Link>
+            </div>
             <Link>
               <FaShoppingCart />
             </Link>

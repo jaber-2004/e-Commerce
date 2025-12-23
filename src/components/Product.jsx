@@ -1,73 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Badge from "./Badge";
 import Images from "./Images";
-import Flex from "./Flex";
-import Heading from "./Heading";
-import { FaHeart } from "react-icons/fa";
-import { LuRefreshCcw } from "react-icons/lu";
-import { FaCartShopping } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+// import Flex from "./Flex";
+// import Heading from "./Heading";
+import { FaHeart, FaShoppingCart } from "react-icons/fa";
+
+import { FaCodeCompare } from "react-icons/fa6";
 
 const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
   return (
-    <div className="relative group">
-      <Images srcImg={productImg} className={"w-full"} />
-      {/* <Badge badgeText={badgeText} className={`absolute top-3 left-3`} /> */}
-      <div className="bg-[#FFF] w-full bottom-[66px]  left-0 p-4 absolute opacity-0 group-hover:opacity-100 translate-y-5 group-hover:translate-0 duration-500">
-        <Flex className={"justify-end"}>
-          <Link className="flex items-center gap-x-3">
-            <Heading
-              className={
-                "text-[#767676] text-base font-dmSans hover:text-primary hover:font-bold duration-300 "
-              }
-              text={"Add to Wish List"}
-              as={"h4"}
-            />
+    <div className="group mx-2">
+      <div className="relative overflow-hidden bg-[#F3F3F3]">
+        <Images srcImg={productImg} className={"w-full"} />
+        <Badge badgeText={badgeText} className={"absolute"} />
+        <div className="absolute text-right bg-white bottom-0 right-0 w-full py-5 opacity-0 group-hover:opacity-100 duration-300 px-4 translate-y-6 group-hover:translate-y-0">
+          <div className="flex gap-x-2 items-center justify-end text-base text-[#767676] hover:font-bold hover:text-[#262626] cursor-pointer duration-500">
+            <p className="">Add to Wish List</p>
             <FaHeart />
-          </Link>
-        </Flex>
-        <Flex className={"justify-end"}>
-          <Link className="flex items-center gap-x-3">
-            <Heading
-              className={
-                "text-[#767676] text-base font-dmSans hover:text-primary hover:font-bold duration-300"
-              }
-              text={"Compare"}
-              as={"h4"}
-            />
-            <LuRefreshCcw />
-          </Link>
-        </Flex>
-        <Flex className={"justify-end"}>
-          <Link className="flex items-center gap-x-3">
-            <Heading
-              className={
-                "text-[#767676] text-base font-dmSans hover:text-primary hover:font-bold duration-300"
-              }
-              text={"Add to Cart"}
-              as={"h4"}
-            />
-            <FaCartShopping />
-          </Link>
-        </Flex>
+          </div>
+          <div className="flex gap-x-2 items-center justify-end text-base text-[#767676] hover:font-bold hover:text-[#262626] cursor-pointer duration-500 py-4">
+            <p className="">Compare</p>
+            <FaCodeCompare />
+          </div>
+          <div className="flex gap-x-2 items-center justify-end text-base text-[#767676] hover:font-bold hover:text-[#262626] cursor-pointer duration-500">
+            <p className="">Add to Cart</p>
+            <FaShoppingCart />
+          </div>
+        </div>
       </div>
-      <Flex className={"justify-between mt-3"}>
-        <Heading
-          className={"text-primary text-[20px] font-medium font-dmSans"}
-          text={productTitle}
-          as={"h4"}
-        />
-        <Heading
-          className={"text-[#767676] text-base font-dmSans"}
-          text={productPrice}
-          as={"h4"}
-        />
-      </Flex>
-      <Heading
-        className={"text-primary text-base font-dmSans"}
-        text={"Black"}
-        as={"h4"}
-      />
+      <div className="flex justify-between items-center h-[75px] py-4 px-2">
+        <h4 className="font-bold text-[20px] text-[#262626]">{productTitle}</h4>
+        <p className="text-base text-[#767676]">{productPrice}</p>
+      </div>
+      <p className="text-base text-[#767676] px-2">Black</p>
     </div>
   );
 };
