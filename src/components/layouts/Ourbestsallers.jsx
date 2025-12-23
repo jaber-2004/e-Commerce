@@ -46,7 +46,7 @@ const Ourbestsallers = () => {
         />
         <Slider {...settings} className="mt-5">
             {alldata.map((item) => (
-          <div className="w-1/4 relative">
+          <div className="w-1/4 px-2.5">
               <Product
                 badgeText={"New"}
                 productImg={item.thumbnail}

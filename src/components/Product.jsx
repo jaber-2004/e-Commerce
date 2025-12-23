@@ -9,7 +9,7 @@ import { FaCodeCompare } from "react-icons/fa6";
 
 const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
   return (
-    <div className="group mx-2">
+    <div className="group">
       <div className="relative overflow-hidden bg-[#F3F3F3]">
         <Images srcImg={productImg} className={"w-full"} />
         <Badge badgeText={badgeText} className={"absolute"} />
