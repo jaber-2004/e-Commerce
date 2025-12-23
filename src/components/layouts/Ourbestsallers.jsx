@@ -13,6 +13,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
+import NextArrow from "../NextArrow";
+import PrevArrow from "../PrevArrow";
 
 const Ourbestsallers = () => {
   let [alldata, setalldata] = useState([]);
@@ -31,6 +33,8 @@ const Ourbestsallers = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
   return (
     <div className="py-16">
