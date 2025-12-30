@@ -30,11 +30,7 @@ const Ourbestsallers = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    slidesToScroll: 0,
   };
   return (
     <div className="py-16">
