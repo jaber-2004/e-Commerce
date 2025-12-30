@@ -10,46 +10,68 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Sharcebar = () => {
-  let [show, setShow] = useState(false)
-  let [showl, setShowl] = useState(false)
-
+  let [show, setShow] = useState(false);
+  let [showl, setShowl] = useState(false);
 
   return (
     <div className="bg-[#F5F5F3] border-y-1 border-y-[#979797] py-4">
       <Container>
         <Flex className={"justify-between"}>
           <div className="flex items-center relative">
-            <div className="flex gap-x-1.5 items-center" onClick={() => setShow(!show)}>
+            <div
+              className="flex gap-x-1.5 items-center"
+              onClick={() => setShow(!show)}
+            >
               <Icons />
               <Heading
                 className={"text-primary text-sm font-dmSans"}
                 text={"Shop by Category"}
                 as={"h5"}
               />
+              {show && (
+                <div
+                  className="fixed inset-0 z-10"
+                  onClick={() => setShow(false)}
+                ></div>
+              )}
             </div>
             {show && (
-              <div className="bg-black text-white w-[220px] absolute top-6 left-0 z-10">
-                <ul>
-                  <li className="border-b border-b-[#D8D8D8] py-2 pl-5">
-                    <Link>Accesories</Link>
-                  </li>
-                  <li className="border-b border-[#D8D8D8] py-2 pl-5">
-                    <Link>Furniture</Link>
-                  </li>
-                  <li className="border-b border-[#D8D8D8] py-2 pl-5">
-                    <Link>Electronics</Link>
-                  </li>
-                  <li className="border-b border-[#D8D8D8] py-2 pl-5">
-                    <Link>Clothes</Link>
-                  </li>
-                  <li className="border-b border-[#D8D8D8] py-2 pl-5">
-                    <Link>Bags</Link>
-                  </li>
-                  <li className="border-b border-[#D8D8D8] py-2 pl-5">
-                    <Link>Home appliances</Link>
-                  </li>
-                </ul>
-              </div>
+              <>
+                <div className="bg-[#262626] text-[#979797] w-[220px] absolute top-6 left-0 z-20">
+                  <ul>
+                    <li className="border-b border-b-[#D8D8D8] py-2 pl-5">
+                      <Link className="hover:ml-3 hover:text-white duration-150">
+                        Accesories
+                      </Link>
+                    </li>
+                    <li className="border-b border-[#D8D8D8] py-2 pl-5">
+                      <Link className="hover:ml-3 hover:text-white duration-150">
+                        Furniture
+                      </Link>
+                    </li>
+                    <li className="border-b border-[#D8D8D8] py-2 pl-5">
+                      <Link className="hover:ml-3 hover:text-white duration-150">
+                        Electronics
+                      </Link>
+                    </li>
+                    <li className="border-b border-[#D8D8D8] py-2 pl-5">
+                      <Link className="hover:ml-3 hover:text-white duration-150">
+                        Clothes
+                      </Link>
+                    </li>
+                    <li className="border-b border-[#D8D8D8] py-2 pl-5">
+                      <Link className="hover:ml-3 hover:text-white duration-150">
+                        Bags
+                      </Link>
+                    </li>
+                    <li className="border-b border-[#D8D8D8] py-2 pl-5">
+                      <Link className="hover:ml-3 hover:text-white duration-150">
+                        Home appliances
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </>
             )}
           </div>
           <div className="py-2 px-3 bg-[#FFF] rounded-[15px] flex items-center w-[400px] justify-between">
@@ -69,10 +91,16 @@ const Sharcebar = () => {
                 <Link>
                   <FaCaretDown />
                 </Link>
+                {showl && (
+                  <div
+                    className="fixed inset-0 z-10"
+                    onClick={() => setShow(false)}
+                  ></div>
+                )}
               </div>
               {showl && (
-                <div className="absolute top-6 left-1/2 -translate-x-1/2 z-10 bg-[#F5F5F3]">
-                  <div className="text-sm font-bold font-dmSans">
+                <div className="absolute top-6 -right-15 z-10 bg-[#F5F5F3]">
+                  <div className="text-sm font-bold font-dmSans ml-15">
                     <ul>
                       <Link>
                         <li className="bg-[#2B2B2B] duration-300 text-white hover:bg-transparent py-2 text-center w-[200px] hover:text-black">
