@@ -19,10 +19,10 @@ const Sharcebar = () => {
       <Container>
         <Flex className={"justify-between"}>
           <div className="flex items-center relative">
-            <div className="flex items-center" onClick={() => setShow(!show)}>
+            <div className="flex gap-x-1.5 items-center" onClick={() => setShow(!show)}>
               <Icons />
               <Heading
-                className={"pl-3 text-primary text-sm font-dmSans"}
+                className={"text-primary text-sm font-dmSans"}
                 text={"Shop by Category"}
                 as={"h5"}
               />
