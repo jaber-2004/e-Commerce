@@ -21,13 +21,13 @@ const Banner = () => {
     <>
       <Slider {...settings}>
         <Link>
-          <div className="bg-[url('/src/assets/banner.png')] py-[220px] bg-cover bg-no-repeat bg-center"></div>
+          <div className="bg-[url('/src/assets/banner.png')] py-[100px] md:py-[140px] lg:py-[220px] bg-cover bg-no-repeat bg-center"></div>
         </Link>
         <Link>
-          <div className="bg-[url('/src/assets/banner.png')] py-[220px] bg-cover bg-no-repeat bg-center"></div>
+          <div className="bg-[url('/src/assets/banner.png')] py-[100px] md:py-[140px] lg:py-[220px] bg-cover bg-no-repeat bg-center"></div>
         </Link>
         <Link>
-          <div className="bg-[url('/src/assets/banner.png')] py-[220px] bg-cover bg-no-repeat bg-center"></div>
+          <div className="bg-[url('/src/assets/banner.png')] py-[100px] md:py-[140px] lg:py-[220px] bg-cover bg-no-repeat bg-center"></div>
         </Link>
       </Slider>
     </>
