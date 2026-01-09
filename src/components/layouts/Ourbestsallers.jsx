@@ -25,7 +25,7 @@ const Ourbestsallers = () => {
           as={"h3"}
         />
         <Flex  className="mt-5">
-            {alldata.slice(0,4).map((item) => (
+            {alldata.slice(16,20).map((item) => (
           <div className="w-1/4 px-2.5">
               <Product
                 badgeText={"New"}

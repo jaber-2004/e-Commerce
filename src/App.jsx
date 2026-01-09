@@ -6,6 +6,10 @@ import Home from './components/pages/Home'
 import Shop from './components/pages/Shop'
 import About from './components/pages/About'
 import Contacts from './components/pages/Contacts'
+import Myaccount from './components/pages/Myaccount'
+import Cart from './components/pages/Cart'
+import Checkout from './components/pages/Checkout'
+import Error from './components/pages/Error'
 
 function App() {
 
@@ -16,6 +20,10 @@ function App() {
     <Route path='/shop' element={<Shop/>}/>
     <Route path='/about' element={<About/>}/>
     <Route path='/contacts' element={<Contacts/>}/>
+    <Route path='/myaccount' element={<Myaccount/>}/>
+    <Route path='/cart' element={<Cart/>}/>
+    <Route path='/checkout' element={<Checkout/>}/>
+    <Route path='*' element={<Error/>}/>
     </Route>
   </Routes>
   )

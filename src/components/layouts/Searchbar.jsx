@@ -102,19 +102,19 @@ const Sharcebar = () => {
                 <div className="absolute top-6 -right-15 z-10 bg-[#F5F5F3]">
                   <div className="text-sm font-bold font-dmSans ml-15">
                     <ul>
-                      <Link>
                         <li className="bg-[#2B2B2B] duration-300 text-white hover:bg-transparent py-2 text-center w-[200px] hover:text-black">
+                      <Link to={"/myaccount"}>
                           My Account
-                        </li>
                       </Link>
-                      <Link>
+                        </li>
                         <li className="bg-[#2B2B2B] duration-300 text-white hover:bg-transparent py-2 text-center w-[200px] hover:text-black">
+                      <Link>
                           Log Out
-                        </li>
                       </Link>
+                        </li>
                     </ul>
                   </div>
-                  <div className="mt-6">
+                  {/* <div className="mt-6">
                     <h4 className="text-[#767676] text-sm  font-dmSans">
                       Subtotal:
                       <span className="text-[#262626] text-base font-bold font-dmSans pl-1">
@@ -133,12 +133,12 @@ const Sharcebar = () => {
                         </li>
                       </Link>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               )}
             </div>
 
-            <Link>
+            <Link to={"/cart"}>
               <FaShoppingCart />
             </Link>
           </div>

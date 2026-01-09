@@ -295,7 +295,6 @@ const Shop = () => {
               Products from 1 to 12 of 80
             </div>
           </Flex>
-
           {/* Shop By Price End */}
         </Container>
       </div>
