@@ -17,8 +17,12 @@ function App() {
   <Routes>
     <Route path='/' element={<RootLayouts/>}>
     <Route index element={<Home/>}/>
+    <Route index element={<Home/>}/>
+    <Route path='/shop' element={<Shop/>}/>
     <Route path='/shop' element={<Shop/>}/>
     <Route path='/about' element={<About/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/contacts' element={<Contacts/>}/>
     <Route path='/contacts' element={<Contacts/>}/>
     <Route path='/myaccount' element={<Myaccount/>}/>
     <Route path='/cart' element={<Cart/>}/>

@@ -21,16 +21,16 @@ const Footer = () => {
             />
             <ul className={"text-sm text-[#6D6D6D] font-dmSans mt-5"}>
               <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
-                <Link to={""}>Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
-                <Link to={""}>Shop</Link>
+                <Link to={"/shop"}>Shop</Link>
               </li>
               <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
-                <Link to={""}>About</Link>
+                <Link to={"/about"}>About</Link>
               </li>
               <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
-                <Link to={""}>Contact</Link>
+                <Link to={"/contacts"}>Contact</Link>
               </li>
               <li className="py-1.5 hover:text-primary hover:font-bold duration-300">
                 <Link to={""}>Journal</Link>
@@ -86,7 +86,6 @@ const Footer = () => {
           </div>
           <div className="w-[20%]">
             <Link to={"/"}>
-             
               <Images srcImg={Logo} />
             </Link>
           </div>
