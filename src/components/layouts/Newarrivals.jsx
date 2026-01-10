@@ -41,7 +41,7 @@ const Newarrivals = () => {
               <Product
                 productImg={productOne}
                 badgeText={"New"}
-                productTitle={"Basic Crew Neck Tee"}
+                productTitle={"Round Table Clock"}
                 productPrice={"$40.00"}
               />
               <Badge className={"absolute top-3 left-5.5"} badgeText={"New"} />
@@ -50,7 +50,7 @@ const Newarrivals = () => {
               <Product
                 productImg={productTwo}
                 badgeText={"New"}
-                productTitle={"Basic Crew Neck Tee"}
+                productTitle={"Smart Watch"}
                 productPrice={"$44.00"}
               />
               {/* <Badge className={"absolute top-3 left-3"} badgeText={"New"} /> */}
@@ -59,7 +59,7 @@ const Newarrivals = () => {
               <Product
                 productImg={productThree}
                 badgeText={"New"}
-                productTitle={"Basic Crew Neck Tee"}
+                productTitle={"Cloth Basket"}
                 productPrice={"$48.00"}
               />
               <Badge className={"absolute top-3 left-5.5"} badgeText={"New"} />
@@ -68,19 +68,18 @@ const Newarrivals = () => {
               <Product
                 productImg={productFour}
                 badgeText={"New"}
-                productTitle={"Basic Crew Neck Tee"}
+                productTitle={"Funny toys for babies"}
                 productPrice={"$55.00"}
               />
               <Badge className={"absolute top-3 left-5.5"} badgeText={"New"} />
             </div>
             <div className="w-1/4 relative px-2.5">
               <Product
-                productImg={productFour}
+                productImg={productTwo}
                 badgeText={"New"}
-                productTitle={"Basic Crew Neck Tee"}
-                productPrice={"$55.00"}
+                productTitle={"Smart Watch"}
+                productPrice={"$44.00"}
               />
-              <Badge className={"absolute top-3 left-5.5"} badgeText={"New"} />
             </div>
           </Slider>
         </div>

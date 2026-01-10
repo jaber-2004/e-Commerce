@@ -106,7 +106,7 @@ const Shop = () => {
               <div className="w-1/3 relative">
                 <Product
                   productImg={shopOne}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Household materials"}
                   productPrice={"$40.00"}
                 />
                 <Badge className={"absolute top-3 left-3"} badgeText={"New"} />
@@ -114,7 +114,7 @@ const Shop = () => {
               <div className="w-1/3 relative">
                 <Product
                   productImg={shopTwo}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Headphones"}
                   productPrice={"$40.00"}
                 />
                 <Badge className={"absolute top-3 left-3"} badgeText={"-10%"} />
@@ -122,7 +122,7 @@ const Shop = () => {
               <div className="w-1/3">
                 <Product
                   productImg={shopThree}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Tea Table"}
                   productPrice={"$40.00"}
                 />
               </div>
@@ -162,7 +162,7 @@ const Shop = () => {
               <div className="w-1/3 relative">
                 <Product
                   productImg={shopcolorOne}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Cap for Boys"}
                   productPrice={"$40.00"}
                 />
                 {/* <Badge className={"absolute top-3 left-3"} badgeText={"New"} /> */}
@@ -170,7 +170,7 @@ const Shop = () => {
               <div className="w-1/3 relative">
                 <Product
                   productImg={shopcolorTwo}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Wall Clock"}
                   productPrice={"$40.00"}
                 />
                 <Badge className={"absolute top-3 left-3"} badgeText={"New"} />
@@ -178,7 +178,7 @@ const Shop = () => {
               <div className="w-1/3">
                 <Product
                   productImg={shopcolorThree}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Travel Bag"}
                   productPrice={"$40.00"}
                 />
               </div>
@@ -207,7 +207,7 @@ const Shop = () => {
               <div className="w-1/3 relative">
                 <Product
                   productImg={shopbrandOne}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Sun glasses"}
                   productPrice={"$40.00"}
                 />
                 <Badge className={"absolute top-3 left-3"} badgeText={"-10%"} />
@@ -215,7 +215,7 @@ const Shop = () => {
               <div className="w-1/3 relative">
                 <Product
                   productImg={shopbrandTwo}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Tea Table"}
                   productPrice={"$40.00"}
                 />
                 <Badge className={"absolute top-3 left-3"} badgeText={"-10%"} />
@@ -223,7 +223,7 @@ const Shop = () => {
               <div className="w-1/3 relative">
                 <Product
                   productImg={shopbrandThree}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Cap for Boys"}
                   productPrice={"$40.00"}
                 />
                 <Badge className={"absolute top-3 left-3"} badgeText={"-10%"} />
@@ -253,7 +253,7 @@ const Shop = () => {
               <div className="w-1/3">
                 <Product
                   productImg={shoppriceOne}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Wicker Basket"}
                   productPrice={"$40.00"}
                 />
                 {/* <Badge className={"absolute top-3 left-3"} badgeText={"-10%"} /> */}
@@ -261,7 +261,7 @@ const Shop = () => {
               <div className="w-1/3">
                 <Product
                   productImg={shoppriceTwo}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Round Table Clock"}
                   productPrice={"$40.00"}
                 />
                 {/* <Badge className={"absolute top-3 left-3"} badgeText={"-10%"} /> */}
@@ -269,7 +269,7 @@ const Shop = () => {
               <div className="w-1/3">
                 <Product
                   productImg={shoppriceThree}
-                  productTitle={"Basic Crew Neck Tee"}
+                  productTitle={"Sun glasses"}
                   productPrice={"$40.00"}
                 />
                 {/* <Badge className={"absolute top-3 left-3"} badgeText={"-10%"} /> */}

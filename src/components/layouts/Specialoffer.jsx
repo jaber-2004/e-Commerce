@@ -23,7 +23,7 @@ const Specialoffer = () => {
             <Product
               productImg={specialOne}
               badgeText={"New"}
-              productTitle={"Basic Crew Neck Tee"}
+              productTitle={"Cap"}
               productPrice={"$40.00"}
             />
             <Badge className={"absolute top-3 left-3"} badgeText={"New"} />
@@ -32,7 +32,7 @@ const Specialoffer = () => {
             <Product
               productImg={specialTwo}
               badgeText={"New"}
-              productTitle={"Basic Crew Neck Tee"}
+              productTitle={"Tea Table"}
               productPrice={"$40.00"}
             />
             {/* <Badge className={"absolute top-3 left-3"} badgeText={"New"} /> */}
@@ -41,7 +41,7 @@ const Specialoffer = () => {
             <Product
               productImg={specialThree}
               badgeText={"New"}
-              productTitle={"Basic Crew Neck Tee"}
+              productTitle={"Headphones"}
               productPrice={"$40.00"}
             />
             <Badge className={"absolute top-3 left-3"} badgeText={"New"} />
@@ -50,7 +50,7 @@ const Specialoffer = () => {
             <Product
               productImg={specialFour}
               badgeText={"New"}
-              productTitle={"Basic Crew Neck Tee"}
+              productTitle={"Sun glasses"}
               productPrice={"$40.00"}
             />
             <Badge className={"absolute top-3 left-3"} badgeText={"New"} />

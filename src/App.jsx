@@ -10,27 +10,29 @@ import Myaccount from './components/pages/Myaccount'
 import Cart from './components/pages/Cart'
 import Checkout from './components/pages/Checkout'
 import Error from './components/pages/Error'
+import ProductsInside from './components/pages/ProductsInside'
 
 function App() {
 
   return (
-  <Routes>
-    <Route path='/' element={<RootLayouts/>}>
-    <Route index element={<Home/>}/>
-    <Route index element={<Home/>}/>
-    <Route path='/shop' element={<Shop/>}/>
-    <Route path='/shop' element={<Shop/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/contacts' element={<Contacts/>}/>
-    <Route path='/contacts' element={<Contacts/>}/>
-    <Route path='/myaccount' element={<Myaccount/>}/>
-    <Route path='/cart' element={<Cart/>}/>
-    <Route path='/checkout' element={<Checkout/>}/>
-    <Route path='*' element={<Error/>}/>
-    </Route>
-  </Routes>
-  )
+    <Routes>
+      <Route path="/" element={<RootLayouts />}>
+        <Route index element={<Home />} />
+        <Route index element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/products_inside" element={<ProductsInside />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/myaccount" element={<Myaccount />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="*" element={<Error />} />
+      </Route>
+    </Routes>
+  );
 }
 
 export default App

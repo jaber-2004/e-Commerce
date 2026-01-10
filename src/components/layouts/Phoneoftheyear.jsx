@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const Phoneoftheyear = () => {
   let navigate = useNavigate();
   const handelClick = () => {
-    navigate('/shop');
+    navigate("/products_inside");
   };
   return (
     <div className="py-10">

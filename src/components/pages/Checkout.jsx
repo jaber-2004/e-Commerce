@@ -265,7 +265,7 @@ const Checkout = () => {
         }
         as={"p"}
       />
-      <button className=" py-4 px-6 bg-primary text-white text-sm font-bold font-dmSans mt-10 cursor-pointer">
+      <button className=" py-4 px-6 bg-primary text-white text-sm font-bold font-dmSans mt-10 cursor-pointer hover:text-primary hover:bg-transparent duration-300">
         Proceed to Bank
       </button>
     </Container>
