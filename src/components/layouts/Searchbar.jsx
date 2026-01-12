@@ -99,7 +99,7 @@ const Sharcebar = () => {
                 )}
               </div>
               {showl && (
-                <div className="absolute top-6 -right-15 z-10 bg-[#F5F5F3]">
+                <div className="absolute top-6 -right-15 z-10">
                   <div className="text-sm font-bold font-dmSans ml-15">
                     <ul>
                         <li className="bg-[#2B2B2B] duration-300 text-white hover:bg-transparent py-2 text-center w-[200px] hover:text-black">
@@ -108,8 +108,13 @@ const Sharcebar = () => {
                       </Link>
                         </li>
                         <li className="bg-[#2B2B2B] duration-300 text-white hover:bg-transparent py-2 text-center w-[200px] hover:text-black">
-                      <Link>
-                          Log Out
+                      <Link to={"/login"}>
+                          Login
+                      </Link>
+                        </li>
+                        <li className="bg-[#2B2B2B] duration-300 text-white hover:bg-transparent py-2 text-center w-[200px] hover:text-black">
+                      <Link to={"/singup"}>
+                         Sing Up
                       </Link>
                         </li>
                     </ul>

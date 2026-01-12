@@ -11,6 +11,8 @@ import Cart from './components/pages/Cart'
 import Checkout from './components/pages/Checkout'
 import Error from './components/pages/Error'
 import ProductsInside from './components/pages/ProductsInside'
+import Login from './components/pages/Login'
+import Singup from './components/pages/Singup'
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/singup" element={<Singup />} />
         <Route path="/myaccount" element={<Myaccount />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
